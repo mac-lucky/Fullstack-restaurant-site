@@ -1,0 +1,18 @@
+.nf{
+    width: 80%;
+    margin: auto;
+}
+
+.padleft{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.iconsize{
+    width: 120px;
+    transform: rotate(8deg);
+}
+
+.padright{
+    margin-right: 1rem;
+}

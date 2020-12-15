@@ -1,0 +1,53 @@
+.LandpageImg {
+  background-image: url("./images/pierogi.png");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: black;
+}
+
+.LandpageImg h1 {
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.nf {
+  margin: auto;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.LandpageImg p {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .LandpageImg p {
+    font-size: 25px !important;
+    font-weight: 400;
+  }
+
+  .LandpageImg h1 {
+    font-size: 50px !important;
+  }
+
+  .nf {
+    left: 5%;
+    width: 90% !important;
+  }
+}

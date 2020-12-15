@@ -1,0 +1,28 @@
+.Separator {
+  background-image: url("./images/separator.png");
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.Separator h1 {
+  color: white;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 45px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.icon {
+  color: white;
+  font-size: 40px;
+  margin-top: 5px;  
+}
