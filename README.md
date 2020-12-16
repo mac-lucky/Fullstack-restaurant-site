@@ -1,4 +1,4 @@
-##Description
+# Description
 Site made in React using MDBootstrap Components and custom CSS code. Use Google Firebase as database to store orders made by customers and store the data. Website will be released soon.
 
 
