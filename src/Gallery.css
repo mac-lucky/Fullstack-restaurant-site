@@ -1,0 +1,23 @@
+.col-md-4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.col-md-4 {
+  height: 50vhx;
+  border: 1rem solid #fff;
+  color: #fff;
+  box-shadow: 10px 10px 50px grey;
+}
+
+.bot {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 575.98px) {
+  .col-md-4 {
+    height: 400px!important;
+    margin: 0 0 3rem 0 !important;
+  }
+}

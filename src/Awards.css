@@ -1,0 +1,58 @@
+.awards {
+  background-image: url("./images/separator.png");
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-color: black;
+  display: block;
+}
+
+.awards h1 {
+  color: white;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 45px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.winnumbers h2 {
+  color: #4caf50;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+}
+
+.winnumbers p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.winnumbers {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .awards {
+    background-attachment: scroll !important;
+  }
+
+  .winnumbers {
+    display: block !important;
+    justify-content: center !important;
+  }
+  .winnumbers h2 {
+    padding-top: 2rem;
+  }
+}

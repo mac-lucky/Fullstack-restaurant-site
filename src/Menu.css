@@ -1,7 +1,7 @@
 .menu {
-  padding-bottom: 5rem;
   width: 70%;
   margin: auto;
+  padding-bottom: 5rem;
 }
 
 .separator {
@@ -14,7 +14,7 @@
   font-weight: 500;
   width: 50%;
   margin: auto;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 .separator::before,
 .separator::after {
@@ -29,22 +29,36 @@
   margin-left: 1rem;
 }
 
-.font{
- font-size: 20px;
+.font {
+  font-size: 20px;
 }
 
-.first{
-    width: 25%;
+.first {
+  width: 25%;
 }
 
-.second{
-    width: 50%;
+.second {
+  width: 50%;
 }
 
-.third{
-    width: 12.5%;
+.third {
+  width: 12.5%;
 }
 
-.fourth{
-    width: 12.5%;
+.fourth {
+  width: 12.5%;
+}
+
+.width {
+  width: 75%;
+}
+
+@media (max-width: 575.98px) {
+  .menu {
+    width: 95% !important;
+  }
+}
+
+.jarallax {
+  min-height: 50vh;
 }

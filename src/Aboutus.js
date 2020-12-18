@@ -6,7 +6,7 @@ class Aboutus extends Component {
   render() {
     return (
       <>
-        <div className="width">
+        <div id="aboutus" className="width">
           <div className="separator">O NAS</div>
           <div className="flex">
             <img src={onas}></img>

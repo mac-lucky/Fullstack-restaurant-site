@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import "./App.css";
 import Navbar from "./Navbar";
 import Landpage from "./Landpage";
-import "./App.css";
 import Aboutus from "./Aboutus";
 import Separator from "./Separator";
 import Menu from "./Menu";
 import Opinions from "./Opinions";
-
+import Gallery from "./Gallery";
+import Awards from "./Awards";
 
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
         <Aboutus />
         <Separator />
         <Menu />
-        <Opinions />
+        <Awards />
+        <Gallery />
       </>
     );
   }

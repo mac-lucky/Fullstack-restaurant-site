@@ -1,25 +1,3 @@
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 34px;
-  color: #1d2125ec;
-  font-weight: 500;
-  width: 50%;
-  margin: auto;
-}
-.separator::before,
-.separator::after {
-  content: "";
-  flex: 1;
-  border-bottom: 4px solid #c7c7c7;
-}
-.separator::before {
-  margin-right: 1rem;
-}
-.separator::after {
-  margin-left: 1rem;
-}
 
 .width {
   width: 85%;

@@ -1,4 +1,4 @@
-.Separator {
+.space {
   background-image: url("./images/separator.png");
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -12,17 +12,27 @@
   justify-content: center;
 }
 
-.Separator h1 {
+.space h1 {
   color: white;
   vertical-align: middle;
   font-weight: 500;
   font-size: 45px;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
 }
 
 .icon {
   color: white;
   font-size: 40px;
-  margin-top: 5px;  
+  margin-top: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .down {
+    align-self: flex-end;
+  }
+  .space {
+    background-attachment: scroll !important;
+  }
 }

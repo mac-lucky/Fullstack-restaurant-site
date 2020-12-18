@@ -2,9 +2,9 @@ import "./Menu.css";
 import React from "react";
 import { MDBTable, MDBTableBody, MDBTableHead } from "mdbreact";
 
-const BasicTable = () => {
+const Menu = () => {
   return (
-    <div className="menu">
+    <div className="menu" id="menu">
       <div className="separator">MENU</div>
       <MDBTable>
         <MDBTableHead color="primary-color" textWhite>
@@ -111,7 +111,7 @@ const BasicTable = () => {
         </MDBTableHead>
       </MDBTable>
       <MDBTable striped bordered>
-      <MDBTableHead color="info-color" textWhite>
+        <MDBTableHead color="info-color" textWhite>
           <tr>
             <th className="first">Nazwa</th>
             <th className="second">Składniki</th>
@@ -121,56 +121,81 @@ const BasicTable = () => {
         </MDBTableHead>
         <MDBTableBody>
           <tr>
-            <td className="first">Żurek</td>
-            <td className="second">zakwas, żytni, marchew, pietruszka, seler, por, przyprawy, ziemniaki, kiełbasa, jajka</td>
-            <td className="third">450 ml</td>
-            <td className="fourth">5,00 zł</td>
+            <td>Żurek</td>
+            <td>
+              zakwas żytni, marchew, pietruszka, seler, por, przyprawy,
+              ziemniaki, kiełbasa, jajka
+            </td>
+            <td>450 ml</td>
+            <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Kapuśniak</td>
-            <td>kapusta kiszona, ziemniaki, przyprawy, marchew, pietruszka, seler, por, liść laurowy, czosnek</td>
+            <td>
+              kapusta kiszona, ziemniaki, przyprawy, marchew, pietruszka, seler,
+              por, liść laurowy, czosnek
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Pomidorowa</td>
-            <td>marchew, pietruszka, seler, por, makaron, pomidory, przyprawy</td>
+            <td>
+              marchew, pietruszka, seler, por, makaron, pomidory, przyprawy
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Ogórkowa</td>
-            <td>ziemniaki, ogórki, kiszone, marchew, pietruszka, seler, por, liść laurowy, przyprawy, śmietana</td>
+            <td>
+              ziemniaki, ogórki, kiszone, marchew, pietruszka, seler, por, liść
+              laurowy, przyprawy, śmietana
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Barszcz Czerwony</td>
-            <td>buraki czerwone, ziemniaki, cebula, marchew, pietruszka, seler, por, liść laurowy, przyprawy, czosnek</td>
+            <td>
+              buraki czerwone, ziemniaki, cebula, marchew, pietruszka, seler,
+              por, liść laurowy, przyprawy, czosnek
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Barszcz Ukraiński</td>
-            <td>buraki, pietruszka, seler, por, marchew, przyprawy, liść laurowy, czosnek</td>
+            <td>
+              buraki, pietruszka, seler, por, marchew, przyprawy, liść laurowy,
+              czosnek
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Pieczarkowa</td>
-            <td>ziemniaki, pieczarka, seler, por, marchew, przyprawy, śmietana</td>
+            <td>
+              ziemniaki, pieczarka, seler, por, marchew, przyprawy, śmietana
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Fasolowa</td>
-            <td>fasola, marchew, pietruszka, seler, por, liść laurowy, czosnek, przyprawy</td>
+            <td>
+              fasola, marchew, pietruszka, seler, por, liść laurowy, czosnek,
+              przyprawy
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
           <tr>
             <td>Grochowa</td>
-            <td>groch, ziemniaki, marchew, pietruszka, seler, por, liść laurowy, czosnek, przyprawy</td>
+            <td>
+              groch, ziemniaki, marchew, pietruszka, seler, por, liść laurowy,
+              czosnek, przyprawy
+            </td>
             <td>450 ml</td>
             <td>5,00 zł</td>
           </tr>
@@ -186,9 +211,9 @@ const BasicTable = () => {
       <MDBTable striped bordered>
         <MDBTableHead color="info-color" textWhite>
           <tr>
-            <th className="w-33.3">Nazwa</th>
-            <th className="w-33.3">Ilość</th>
-            <th className="w-33.3">Cena</th>
+            <th className="second">Nazwa</th>
+            <th className="first">Ilość</th>
+            <th className="first">Cena</th>
           </tr>
         </MDBTableHead>
         <MDBTableBody>
@@ -238,40 +263,52 @@ const BasicTable = () => {
             <td>5,00 zł</td>
           </tr>
           <tr>
-            <td>Pepsi</td>
+            <td>Kompot</td>
             <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
+            <td>2,50 zł</td>
           </tr>
           <tr>
-            <td>Pepsi</td>
+            <td>Maślanka</td>
             <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
+            <td>2,50 zł</td>
           </tr>
-          <tr>
-            <td>Pepsi</td>
-            <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
-          </tr>
-          <tr>
-            <td>Pepsi</td>
-            <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
-          </tr>
-          <tr>
-            <td>Pepsi</td>
-            <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
-          </tr>
-          <tr>
-            <td>Pepsi</td>
-            <td>0.33l / 0.5l</td>
-            <td>5,00 zł</td>
-          </tr>
-
         </MDBTableBody>
       </MDBTable>
-    </div>
+      <MDBTable>
+        <MDBTableHead color="primary-color" textWhite>
+          <tr>
+            <th className="text-center font">Dodatki</th>
+          </tr>
+        </MDBTableHead>
+      </MDBTable>
+      <MDBTable striped bordered>
+        <MDBTableHead color="info-color" textWhite>
+          <tr>
+            <th className="second">Nazwa</th>
+            <th className="first">Ilość</th>
+            <th className="first">Cena</th>
+          </tr>
+        </MDBTableHead>
+        <MDBTableBody>
+          <tr>
+            <td>Pojemnik dodarkowy</td>
+            <td>1 szt</td>
+            <td>1,00 zł</td>
+          </tr>
+          <tr>
+            <td>Cebulka +</td>
+            <td>25ml</td>
+            <td>1,00 zł</td>
+          </tr>
+          <tr>
+            <td>Śmietanka +</td>
+            <td>50ml</td>
+            <td>1,00 zł</td>
+          </tr>
+        </MDBTableBody>
+      </MDBTable>
+      </div>
   );
 };
 
-export default BasicTable;
+export default Menu;

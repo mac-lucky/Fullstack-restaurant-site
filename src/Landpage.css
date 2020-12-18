@@ -50,4 +50,7 @@
     left: 5%;
     width: 90% !important;
   }
+  .LandpageImg {
+    background-attachment: scroll !important;
+  }
 }

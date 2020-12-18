@@ -6,7 +6,7 @@ class Landpage extends Component {
   render() {
     return (
       <>
-        <MDBContainer fluid className="LandpageImg">
+        <MDBContainer id="home" fluid className="LandpageImg">
           <div className="nf">
             <h1>Pierogarnia na Basztowej</h1>
             <hr class="hr-light"></hr>
