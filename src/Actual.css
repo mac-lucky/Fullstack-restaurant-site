@@ -1,0 +1,48 @@
+.actualwidth {
+  width: 85%;
+  margin: auto;
+}
+
+.actualflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actualtext {
+  width: 45%;
+}
+
+.actualtext h2 {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.actualtext a{
+    color: black;
+}
+
+.actualtext p {
+  font-size: 19px;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .actualflex {
+    display: block !important;
+    justify-content: center !important;
+  }
+
+  .actualtext {
+    width: 90% !important;
+    margin: auto;
+    padding-top: 5rem;
+  }
+  .actualtext p {
+    text-align: center !important;
+  }
+  .actualwidth {
+    width: 100% !important;
+  }
+}

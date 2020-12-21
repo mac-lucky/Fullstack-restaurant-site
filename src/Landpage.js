@@ -11,7 +11,7 @@ class Landpage extends Component {
             <h1>Pierogarnia na Basztowej</h1>
             <hr class="hr-light"></hr>
             <p>
-              Zapraszamy do naszej pierogarnii, gdzie każdy pieróg ma znaczenie
+              Zapraszamy do naszej pierogarni, gdzie każdy pieróg ma znaczenie
             </p>
             <MDBBtn
               href="#order"

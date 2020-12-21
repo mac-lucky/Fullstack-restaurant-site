@@ -8,6 +8,10 @@ import Menu from "./Menu";
 import Opinions from "./Opinions";
 import Gallery from "./Gallery";
 import Awards from "./Awards";
+import Actual from "./Actual";
+import Contact from "./Contact";
+
+
 
 class App extends Component {
   render() {
@@ -15,11 +19,13 @@ class App extends Component {
       <>
         <Navbar />
         <Landpage />
+        <Actual />
         <Aboutus />
         <Separator />
         <Menu />
         <Awards />
         <Gallery />
+        <Contact />
       </>
     );
   }
