@@ -24,7 +24,7 @@ class App extends Component {
         <Separator />
         <Menu />
         <Awards />
-        <Gallery />
+        <Opinions />
         <Contact />
       </>
     );

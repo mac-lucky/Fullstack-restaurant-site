@@ -1,33 +1,29 @@
-
-.width {
-  width: 85%;
+.opinionsrow {
+  width: 80%;
   margin: auto;
-  padding-bottom: 5rem;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.flex img {
-  width: 40%;
-}
-
-.text {
-  width: 50%;
-}
-
-.text h2 {
-  font-size: 26px;
-  font-weight: 400;
+.opinionstext {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.text p {
-  padding-top: 2rem;
-  font-size: 19px;
-  text-align: justify;
-  line-height: 2rem;
+.opinionstext img {
+  margin: auto;
+}
+
+.cardheight {
+  height: 35vh;
+}
+
+.stars {
+  color: gold;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 80%;
+  left: 0;
+  right: 0;
+  text-align: center;
 }

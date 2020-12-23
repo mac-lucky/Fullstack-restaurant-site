@@ -1,12 +1,10 @@
 .contactwidth {
-  width: 90%;
-  margin: auto;
   padding-bottom: 5rem;
 }
 
 .contactflex {
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
   margin: auto;
 }
 
@@ -18,30 +16,87 @@
 
 .contactflex p {
   font-size: 19px;
-  text-align: justify;
+  text-align: center;
   line-height: 2rem;
 }
 
+.contacttext {
+  width: 20%;
+}
 
-.contacttext{
-  width: 50%;
+.contactmap {
+  width: 40%;
+  box-shadow: 10px 10px 20px grey;
+  margin-left: 7rem;
+}
+
+.btn-circle.btn-sm {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 8px;
+  text-align: center;
+}
+.btn-circle.btn-md {
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+}
+.btn-circle.btn-lg {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contacticon {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 575.98px) {
   .contactflex {
-    display: block !important;
-    justify-content: center !important;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .contactflex {
-    width: 90% !important;
+  .contactflex h2 {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .contactflex p {
+    font-size: 19px;
+    text-align: center;
+    line-height: 2rem;
+    padding-left: 2rem;
+    margin: auto;
+  }
+
+  .contacttext {
+    width: 90%;
     margin: auto;
     padding-top: 5rem;
   }
-  .contactflex p {
-    text-align: center !important;
+
+  .contactmap {
+    width: 90%;
+    margin: auto;
+    height: 40vh;
   }
-  .actualwidth {
-    width: 100% !important;
+
+  .contacticon {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
   }
 }

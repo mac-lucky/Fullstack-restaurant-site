@@ -19,7 +19,7 @@ class Awards extends Component {
             </div>
             <div>
               <h2>+30</h2>
-              <p>powracającyh klientów</p>
+              <p>powracających klientów</p>
             </div>
             <div>
               <h2>+800</h2>

@@ -18,14 +18,14 @@ class Gallery extends Component {
         <LazyLoadComponent>
         <MDBContainer fluid className="bot">
           <MDBRow className="no-gutters">
-            <MDBCol md="4"><img  src={one}></img></MDBCol>
-            <MDBCol md="4"><img  src={two}></img></MDBCol>
-            <MDBCol md="4"><img  src={three}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={one}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={two}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={three}></img></MDBCol>
           </MDBRow>
           <MDBRow className="no-gutters">
-            <MDBCol md="4"><img  src={four}></img></MDBCol>
-            <MDBCol md="4"><img  src={five}></img></MDBCol>
-            <MDBCol md="4"><img  src={six}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={four}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={five}></img></MDBCol>
+            <MDBCol md="4" className="gallerygrid"><img  src={six}></img></MDBCol>
           </MDBRow>
         </MDBContainer>
         </LazyLoadComponent>
