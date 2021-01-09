@@ -1,34 +1,27 @@
 import React, { Component } from "react";
 import "./App.css";
-import Navbar from "./Navbar";
-import Landpage from "./Landpage";
-import Aboutus from "./Aboutus";
-import Separator from "./Separator";
-import Menu from "./Menu";
-import Opinions from "./Opinions";
-import Gallery from "./Gallery";
-import Awards from "./Awards";
-import Actual from "./Actual";
-import Contact from "./Contact";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Register from "./Register";
+import MainPage from "./MainPage";
 
-
-
-class App extends Component {
+class MainPage extends Component {
   render() {
     return (
       <>
-        <Navbar />
-        <Landpage />
-        <Actual />
-        <Aboutus />
-        <Separator />
-        <Menu />
-        <Awards />
-        <Opinions />
-        <Contact />
+        <Switch>
+          <BrowserRouter>
+            <Redirect exact from="" to="/" />
+            <Route path="/">
+              <MainPage />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+          </BrowserRouter>
+        </Switch>
       </>
     );
   }
 }
 
-export default App;
+export default MainPage;

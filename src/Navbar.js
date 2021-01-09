@@ -82,9 +82,9 @@ class Navbar extends Component {
                     <MDBIcon icon="user" />
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">Moje zamówienia</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Zaloguj</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Zarejestruj</MDBDropdownItem>
+                    <MDBDropdownItem href="/orders">Moje zamówienia</MDBDropdownItem>
+                    <MDBDropdownItem href="/login">Zaloguj</MDBDropdownItem>
+                    <MDBDropdownItem href="/register">Zarejestruj</MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>

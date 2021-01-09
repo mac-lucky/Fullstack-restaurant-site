@@ -7,8 +7,6 @@ import three from "./images/three.jpg";
 import four from "./images/four.jpg";
 import five from "./images/five.jpg";
 import six from "./images/six.jpg";
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
-
 
 class Gallery extends Component {
   render() {
