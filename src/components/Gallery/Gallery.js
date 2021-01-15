@@ -8,8 +8,7 @@ import four from "./images/four.jpg";
 import five from "./images/five.jpg";
 import six from "./images/six.jpg";
 
-class Gallery extends Component {
-  render() {
+const Gallery = () => { 
     return (
       <>
         <div class="separator">GALERIA DAŃ</div>
@@ -30,6 +29,5 @@ class Gallery extends Component {
       </>
     );
   }
-}
 
 export default Gallery;

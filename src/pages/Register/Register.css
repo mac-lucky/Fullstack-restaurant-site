@@ -1,0 +1,10 @@
+.RegisterPage {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../images/registerbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+}
+

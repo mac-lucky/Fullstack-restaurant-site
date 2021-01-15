@@ -1,5 +1,5 @@
 .LandpageImg {
-  background-image: url("./images/pierogi.png");
+  background-image: url("../../images/pierogi.png");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -11,20 +11,22 @@
 
 .LandpageImg h1 {
   color: white;
-  vertical-align: middle;
   text-align: center;
   font-weight: 500;
   font-size: 60px;
 }
 
 .nf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  width: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  height: 100%;
+}
+
+hr {
+  width: 100%;               
 }
 
 .LandpageImg p {
@@ -47,7 +49,6 @@
   }
 
   .nf {
-    left: 5%;
     width: 90% !important;
   }
   .LandpageImg {

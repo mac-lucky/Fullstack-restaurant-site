@@ -3,8 +3,7 @@ import "./Contact.css";
 import { MDBCard, MDBIcon, MDBBtn } from "mdbreact";
 var API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
-class Actual extends Component {
-  render() {
+const Contact = () => { 
     return (
       <>
         <div id="contact" className="contactwidth">
@@ -58,6 +57,5 @@ class Actual extends Component {
       </>
     );
   }
-}
 
-export default Actual;
+export default Contact;

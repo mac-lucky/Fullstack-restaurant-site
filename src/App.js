@@ -1,27 +1,34 @@
 import React, { Component } from "react";
-import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Register from "./Register";
-import MainPage from "./MainPage";
+import Register from "./pages/Register/Register";
+import MainPage from "./pages/MainPage";
+import Navbar from "./components/Navbar/Navbar";
 
-class MainPage extends Component {
+const Layout = ({children}) => {
+  return (
+    <div>
+      <Navbar />
+      <main>{children}</main>
+    </div>
+  );
+};
+
+
+class App extends Component {
   render() {
     return (
       <>
-        <Switch>
-          <BrowserRouter>
-            <Redirect exact from="" to="/" />
-            <Route path="/">
-              <MainPage />
-            </Route>
-            <Route path="/register">
-              <Register />
-            </Route>
-          </BrowserRouter>
-        </Switch>
+        <BrowserRouter>
+          <Layout>
+            <Switch>
+              <Route exact={true} path="/" component={MainPage} />
+              <Route exact={true} path="/register" component={Register} />
+            </Switch>
+          </Layout>
+        </BrowserRouter>
       </>
     );
   }
 }
 
-export default MainPage;
+export default App;

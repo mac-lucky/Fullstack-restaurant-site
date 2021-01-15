@@ -16,7 +16,10 @@ import {
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./Navbar.css";
-import ikonka from "./images/ikonkapiera.png";
+import ikonka from "../../images/ikonkapiera.png";
+import * as Scroll from "react-scroll";
+
+let ScrollLink = Scroll.Link;
 
 class Navbar extends Component {
   state = {
@@ -45,7 +48,7 @@ class Navbar extends Component {
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
               <MDBNavItem active>
-                <a class="nav-link" href="#home" waves>
+                <a class="nav-link" href="/" waves>
                   Home
                 </a>
               </MDBNavItem>
@@ -82,9 +85,13 @@ class Navbar extends Component {
                     <MDBIcon icon="user" />
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="/orders">Moje zamówienia</MDBDropdownItem>
-                    <MDBDropdownItem href="/login">Zaloguj</MDBDropdownItem>
-                    <MDBDropdownItem href="/register">Zarejestruj</MDBDropdownItem>
+                    <MDBDropdownItem href="#orders">
+                      Moje zamówienia
+                    </MDBDropdownItem>
+                    <MDBDropdownItem href="#login">Zaloguj</MDBDropdownItem>
+                    <MDBDropdownItem href="/register">
+                      Zarejestruj
+                    </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>

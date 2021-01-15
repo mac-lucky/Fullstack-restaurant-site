@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Aboutus.css";
-import onas from "./images/onas.png";
+import onas from "../../images/onas.png";
 
-class Aboutus extends Component {
-  render() {
+
+const Aboutus = () => { 
     return (
       <>
         <div id="aboutus" className="width">
@@ -24,7 +24,6 @@ class Aboutus extends Component {
         </div>
       </>
     );
-  }
 }
 
 export default Aboutus;

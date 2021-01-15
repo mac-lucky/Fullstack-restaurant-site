@@ -2,8 +2,7 @@ import "./Separator.css";
 import React, { Component } from "react";
 import { MDBContainer, MDBIcon } from "mdbreact";
 
-class Separator extends Component {
-  render() {
+const Separator = () => { 
     return (
       <>
         <MDBContainer fluid className="space">
@@ -14,6 +13,5 @@ class Separator extends Component {
       </>
     );
   }
-}
 
 export default Separator;

@@ -2,8 +2,7 @@ import "./Awards.css";
 import React, { Component } from "react";
 import { MDBContainer, MDBIcon } from "mdbreact";
 
-class Awards extends Component {
-  render() {
+const Awards = () => { 
     return (
       <>
         <MDBContainer id="awards" fluid className="awards">
@@ -30,6 +29,5 @@ class Awards extends Component {
       </>
     );
   }
-}
 
 export default Awards;

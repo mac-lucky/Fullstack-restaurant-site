@@ -1,34 +1,31 @@
 import "./Landpage.css";
 import React, { Component } from "react";
 import { MDBContainer, MDBBtn } from "mdbreact";
+import { Element } from "react-scroll";
 
-class Landpage extends Component {
-  render() {
-    return (
-      <>
-        <MDBContainer id="home" fluid className="LandpageImg">
+const Landpage = () => {
+  return (
+    <>
+      <Element id="example-destination" name="example-destination">
+        <div id="home" className="LandpageImg">
           <div className="nf">
             <h1>Pierogarnia na Basztowej</h1>
-            <hr class="hr-light"></hr>
-            <p>
-              Zapraszamy do naszej pierogarni, gdzie każdy pieróg ma znaczenie
-            </p>
+            <hr className="hr-light wow fadeInLeft" />
+            <p>Zapraszamy do naszej pierogarni, gdzie liczy się jakość</p>
             <MDBBtn
-              href="#order"
+              href="/order"
               className="w-50"
-              block
               size="lg"
               outline
-              rounded
               color="white"
             >
               Złóż zamówienie
             </MDBBtn>
           </div>
-        </MDBContainer>
-      </>
-    );
-  }
-}
+        </div>
+      </Element>
+    </>
+  );
+};
 
 export default Landpage;

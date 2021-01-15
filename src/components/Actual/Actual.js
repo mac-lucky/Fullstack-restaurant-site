@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./Actual.css";
 
-class Actual extends Component {
-  render() {3
+const Actual = () => { 
     return (
       <>
         <div id="actual" className="actualwidth">
@@ -27,6 +26,5 @@ class Actual extends Component {
       </>
     );
   }
-}
 
 export default Actual;
