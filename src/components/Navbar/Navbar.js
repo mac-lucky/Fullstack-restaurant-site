@@ -4,6 +4,7 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
+  MDBLink,
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
@@ -17,9 +18,6 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 import "./Navbar.css";
 import ikonka from "../../images/ikonkapiera.png";
-import * as Scroll from "react-scroll";
-
-let ScrollLink = Scroll.Link;
 
 class Navbar extends Component {
   state = {
@@ -30,14 +28,14 @@ class Navbar extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
-  render() {
+  render(props) {
     return (
       <Router>
         <MDBNavbar
           fixed="top"
-          scrolling
+          scrolling={this.props.scrolling}
           color="bg-dark"
-          transparent
+          transparent={this.props.transparent}
           dark
           expand="md"
         >
@@ -89,9 +87,7 @@ class Navbar extends Component {
                       Moje zamówienia
                     </MDBDropdownItem>
                     <MDBDropdownItem href="#login">Zaloguj</MDBDropdownItem>
-                    <MDBDropdownItem href="/register">
-                      Zarejestruj
-                    </MDBDropdownItem>
+                      <MDBDropdownItem href="/register">Zarejestruj</MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavItem>

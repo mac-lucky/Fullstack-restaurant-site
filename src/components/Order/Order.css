@@ -1,0 +1,15 @@
+.OrderPage {
+  height: 100vh;
+  display: flex;
+}
+
+.OrderLeft {
+  width: 75%;
+}
+
+.OrderLeft img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+

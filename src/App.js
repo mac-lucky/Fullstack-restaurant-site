@@ -1,30 +1,19 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Register from "./pages/Register/Register";
+import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
-import Navbar from "./components/Navbar/Navbar";
-
-const Layout = ({children}) => {
-  return (
-    <div>
-      <Navbar />
-      <main>{children}</main>
-    </div>
-  );
-};
-
+import OrderPage from "./pages/OrderPage";
 
 class App extends Component {
   render() {
     return (
       <>
         <BrowserRouter>
-          <Layout>
             <Switch>
-              <Route exact={true} path="/" component={MainPage} />
-              <Route exact={true} path="/register" component={Register} />
+              <Route exact path="/" component={MainPage} />
+              <Route exact path="/register" component={RegisterPage} />
+              <Route exact path="/order" component={OrderPage} />
             </Switch>
-          </Layout>
         </BrowserRouter>
       </>
     );

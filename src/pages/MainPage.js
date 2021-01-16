@@ -7,12 +7,12 @@ import Opinions from "../components/Opinions/Opinions";
 import Awards from "../components/Awards/Awards";
 import Actual from "../components/Actual/Actual";
 import Contact from "../components/Contact/Contact";
+import Navbar from "../components/Navbar/Navbar";
 
-
-
-const MainPage = () => {
+const MainPage = (props) => {
     return (
-      <>
+      <> 
+        <Navbar transparent={true} scrolling={true}/>
         <Landpage />
         <Actual />
         <Aboutus />
