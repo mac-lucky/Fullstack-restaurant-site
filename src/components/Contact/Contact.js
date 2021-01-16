@@ -5,7 +5,6 @@ var API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const Contact = () => { 
     return (
-      <>
         <div id="contact" className="contactwidth">
           <div className="separator">Kontakt</div>
           <div className="contactflex">
@@ -54,7 +53,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </>
     );
   }
 

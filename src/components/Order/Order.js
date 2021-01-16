@@ -5,7 +5,6 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBCardHeader,
-  MDBCardFooter,
   MDBBtn,
   MDBContainer,
 } from "mdbreact";
@@ -20,12 +19,12 @@ const Order = () => {
           <img src={OrderTopImg}></img>
         </div>
         <div className="OrderRight">
-          <MDBContainer>
-            <MDBCard style={{ width: "22rem", marginTop: "1rem" }}>
-              <MDBCardHeader color="primary-color" tag="h3">
-                Featured
+          <div>
+            <MDBCard style={{ marginTop: "0.5rem", height: "100vh" }}>
+              <MDBCardHeader className="text-center" color="orange lighten-3" tag="h3">
+                KOSZYK
               </MDBCardHeader>
-              <MDBCardBody>
+              <MDBCardBody className="text-justify">
                 <MDBCardTitle>Special title treatment</MDBCardTitle>
                 <MDBCardText>
                   With supporting text below as a natural lead-in to additional
@@ -34,7 +33,7 @@ const Order = () => {
                 <MDBBtn color="primary">go somewhere</MDBBtn>
               </MDBCardBody>
             </MDBCard>
-          </MDBContainer>
+          </div>
         </div>
       </div>
     </>

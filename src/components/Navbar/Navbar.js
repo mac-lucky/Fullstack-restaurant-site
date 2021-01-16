@@ -18,6 +18,7 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 import "./Navbar.css";
 import ikonka from "../../images/ikonkapiera.png";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 class Navbar extends Component {
   state = {
@@ -30,71 +31,97 @@ class Navbar extends Component {
 
   render(props) {
     return (
-      <Router>
-        <MDBNavbar
-          fixed="top"
-          scrolling={this.props.scrolling}
-          color="bg-dark"
-          transparent={this.props.transparent}
-          dark
-          expand="md"
-        >
-          <MDBNavbarBrand>
-            <img src={ikonka} className="padleft iconsize white-text"></img>
-          </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-            <MDBNavbarNav left>
-              <MDBNavItem active>
-                <a class="nav-link" href="/" waves>
-                  Home
-                </a>
-              </MDBNavItem>
-              <MDBNavItem>
-                <a class="nav-link" href="#actual" waves>
-                  Aktualne informacje
-                </a>
-              </MDBNavItem>
-              <MDBNavItem>
-                <a class="nav-link" href="#aboutus" waves>
-                  O nas
-                </a>
-              </MDBNavItem>
-              <MDBNavItem>
-                <a class="nav-link" href="#menu" waves>
-                  Menu
-                </a>
-              </MDBNavItem>
-              <MDBNavItem>
-                <a class="nav-link" href="#opinions" waves>
-                  Opinie
-                </a>
-              </MDBNavItem>
-              <MDBNavItem>
-                <a class="nav-link" href="#contact" waves>
-                  Kontakt
-                </a>
-              </MDBNavItem>
-            </MDBNavbarNav>
-            <MDBNavbarNav right>
-              <MDBNavItem className="padright">
-                <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <MDBIcon icon="user" />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#orders">
-                      Moje zamówienia
-                    </MDBDropdownItem>
-                    <MDBDropdownItem href="#login">Zaloguj</MDBDropdownItem>
-                      <MDBDropdownItem href="/register">Zarejestruj</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
-      </Router>
+      <MDBNavbar
+        fixed="top"
+        scrolling={this.props.scrolling}
+        color="bg-dark"
+        transparent={this.props.transparent}
+        dark
+        expand="md"
+      >
+        <MDBNavbarBrand>
+          <img src={ikonka} className="padleft iconsize white-text"></img>
+        </MDBNavbarBrand>
+        <MDBNavbarToggler onClick={this.toggleCollapse} />
+        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBNavbarNav left>
+            <MDBNavItem>
+              <NavLink
+                to="/#home"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                Home
+              </NavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <NavLink
+                to="/#actual"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                Aktualne informacje
+              </NavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <NavLink
+                to="/#aboutus"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                O nas
+              </NavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <NavLink
+                to="/#menu"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                Menu
+              </NavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <NavLink
+                to="/#opinions"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                Opinie
+              </NavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <NavLink
+                to="/#contact"
+                activeClassName="navbarActivated"
+                className="nav-link"
+              >
+                Kontakt
+              </NavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+          <MDBNavbarNav right>
+            <MDBNavItem className="padright">
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <MDBIcon icon="user" />
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBNavLink className="dropdown-item" to="/myorders">
+                    <span style={{ color: "black" }}>Moje zamówienia</span>
+                  </MDBNavLink>
+                  <MDBNavLink className="dropdown-item" to="/login">
+                    <span style={{ color: "black" }}>Zaloguj</span>
+                  </MDBNavLink>
+                  <MDBNavLink className="dropdown-item" to="/register">
+                    <span style={{ color: "black" }}>Zarejestruj</span>
+                  </MDBNavLink>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
     );
   }
 }

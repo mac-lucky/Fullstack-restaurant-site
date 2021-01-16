@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Aboutus.css";
 import onas from "../../images/onas.png";
 
 
 const Aboutus = () => { 
     return (
-      <>
         <div id="aboutus" className="width">
           <div className="separator">O NAS</div>
           <div className="flex">
@@ -22,7 +21,6 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
-      </>
     );
 }
 

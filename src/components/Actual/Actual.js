@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Actual.css";
 
 const Actual = () => { 
     return (
-      <>
         <div id="actual" className="actualwidth">
           <div className="separator">Aktualne informacje</div>
           <div className="actualflex">
@@ -23,7 +22,6 @@ const Actual = () => {
             </div>
           </div>
         </div>
-      </>
     );
   }
 

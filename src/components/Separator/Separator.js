@@ -1,5 +1,5 @@
 import "./Separator.css";
-import React, { Component } from "react";
+import React from "react";
 import { MDBContainer, MDBIcon } from "mdbreact";
 
 const Separator = () => { 

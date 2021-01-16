@@ -1,10 +1,9 @@
 import "./Awards.css";
-import React, { Component } from "react";
-import { MDBContainer, MDBIcon } from "mdbreact";
+import React from "react";
+import { MDBContainer } from "mdbreact";
 
 const Awards = () => { 
     return (
-      <>
         <MDBContainer id="awards" fluid className="awards">
           <h1>Klienci, którzy nam zaufali</h1>
           <div className="winnumbers">
@@ -26,7 +25,6 @@ const Awards = () => {
             </div>
           </div>
         </MDBContainer>
-      </>
     );
   }
 

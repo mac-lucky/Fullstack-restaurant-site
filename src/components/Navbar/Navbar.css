@@ -16,3 +16,8 @@
 .padright{
     margin-right: 1rem;
 }
+
+.navbarActivated{
+    color: #fff;
+    background-color: rgba(255,255,255,0.1)
+}

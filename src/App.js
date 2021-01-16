@@ -7,7 +7,6 @@ import OrderPage from "./pages/OrderPage";
 class App extends Component {
   render() {
     return (
-      <>
         <BrowserRouter>
             <Switch>
               <Route exact path="/" component={MainPage} />
@@ -15,7 +14,6 @@ class App extends Component {
               <Route exact path="/order" component={OrderPage} />
             </Switch>
         </BrowserRouter>
-      </>
     );
   }
 }

@@ -5,7 +5,6 @@ import { MDBLink, MDBBtn } from "mdbreact";
 
 const Landpage = () => {
   return (
-    <>
       <div id="home" className="LandpageImg">
         <div className="nf">
           <h1>Pierogarnia na Basztowej</h1>
@@ -18,7 +17,6 @@ const Landpage = () => {
           </MDBLink>
         </div>
       </div>
-    </>
   );
 };
 

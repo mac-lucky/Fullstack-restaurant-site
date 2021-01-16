@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput, MDBCard, MDBCardBody } from "mdbreact";
 import "./Register.css";
 
