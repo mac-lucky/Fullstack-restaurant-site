@@ -1,38 +1,58 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardHeader,
-  MDBBtn,
-  MDBContainer,
-} from "mdbreact";
 import "./Order.css";
+import OrderCard from "./OrderCard";
+import OrderBasket from "./OrderBasket";
 import OrderTopImg from "../../images/ordertop.jpg";
+import logo from "../../images/logo.png";
+import MediaQuery from "react-responsive";
 
 const Order = () => {
   return (
     <>
       <div className="OrderPage">
         <div className="OrderLeft">
-          <img src={OrderTopImg}></img>
+          <div style={{ position: "relative", left: "0", top: "0" }}>
+            <img className="OrderTopImg" src={OrderTopImg}></img>
+            <img className="OrderLogo" src={logo}></img>
+          </div>
+          <div className="OrderCardContainer">
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"25,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"25,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"25,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"25,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"25,00 zł"}
+              quantity={"8 szt"}
+            />
+          </div>
         </div>
         <div className="OrderRight">
           <div>
-            <MDBCard style={{ marginTop: "0.5rem", height: "100vh" }}>
-              <MDBCardHeader className="text-center" color="orange lighten-3" tag="h3">
-                KOSZYK
-              </MDBCardHeader>
-              <MDBCardBody className="text-justify">
-                <MDBCardTitle>Special title treatment</MDBCardTitle>
-                <MDBCardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </MDBCardText>
-                <MDBBtn color="primary">go somewhere</MDBBtn>
-              </MDBCardBody>
-            </MDBCard>
+            <MediaQuery minDeviceWidth={575}>
+              <OrderBasket />
+            </MediaQuery>
           </div>
         </div>
       </div>

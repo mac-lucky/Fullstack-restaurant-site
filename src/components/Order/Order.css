@@ -3,21 +3,80 @@
   display: flex;
   padding-top: 74px;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .OrderLeft {
   width: 75%;
 }
 
-.OrderRight{
+.OrderRight {
   position: fixed;
   width: 25%;
   right: 0px;
 }
 
-.OrderLeft img {
-  height: 40vh;
-  width: 100%;
-  object-fit: cover;
+.OrderCardContainer {
+  padding-top: 5rem;
 }
 
+.OrderTopImg {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.OrderLogo {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 10%);
+}
+
+.OrderCardBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OrderCardWrap {
+  display: flex;
+  align-items: center;
+}
+
+.OrderCardPrice {
+  padding-right: 2rem;
+}
+
+.OrderCardPrice span {
+  color: green;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .OrderLeft {
+    width: 100%;
+  }
+
+  .OrderCardBody {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .OrderCardWrap {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .OrderCardText {
+    text-align: center;
+  }
+}

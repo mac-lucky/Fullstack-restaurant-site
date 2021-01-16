@@ -8,7 +8,7 @@ const Register = () => {
       <div className="RegisterPage d-flex align-items-center">
         <MDBContainer>
           <MDBRow>
-            <MDBCol className="offset-lg-3" lg="6">
+            <MDBCol className="offset-lg-3 offset-md-0" lg="6">
               <MDBCard>
                 <MDBCardBody>
                   <form>
