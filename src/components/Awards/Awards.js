@@ -13,7 +13,7 @@ const Awards = () => {
             </div>
             <div>
               <h2>+80</h2>
-              <p>zamówień dzienne</p>
+              <p>zamówień dziennie</p>
             </div>
             <div>
               <h2>+30</h2>

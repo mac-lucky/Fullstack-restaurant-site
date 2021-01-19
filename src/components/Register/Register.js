@@ -12,10 +12,10 @@ const Register = () => {
               <MDBCard>
                 <MDBCardBody>
                   <form>
-                    <p className="h4 text-center py-4">Sign up</p>
+                    <p className="h4 text-center py-4">Rejestracja</p>
                     <div className="grey-text">
                       <MDBInput
-                        label="Your name"
+                        label="Imię"
                         icon="user"
                         group
                         type="text"
@@ -24,7 +24,16 @@ const Register = () => {
                         success="right"
                       />
                       <MDBInput
-                        label="Your email"
+                        label="Nazwisko"
+                        icon="user"
+                        group
+                        type="text"
+                        validate
+                        error="wrong"
+                        success="right"
+                      />
+                      <MDBInput
+                        label="Email"
                         icon="envelope"
                         group
                         type="email"
@@ -33,16 +42,7 @@ const Register = () => {
                         success="right"
                       />
                       <MDBInput
-                        label="Confirm your email"
-                        icon="exclamation-triangle"
-                        group
-                        type="text"
-                        validate
-                        error="wrong"
-                        success="right"
-                      />
-                      <MDBInput
-                        label="Your password"
+                        label="Hasło"
                         icon="lock"
                         group
                         type="password"

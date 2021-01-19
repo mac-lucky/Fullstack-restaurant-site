@@ -8,21 +8,23 @@ import Awards from "../components/Awards/Awards";
 import Actual from "../components/Actual/Actual";
 import Contact from "../components/Contact/Contact";
 import Navbar from "../components/Navbar/Navbar";
+import Login from "../components/Login/Login";
+
 
 const MainPage = (props) => {
-    return (
-      <> 
-        <Navbar transparent={true} scrolling={true}/>
-        <Landpage />
-        <Actual />
-        <Aboutus />
-        <Separator />
-        <Menu />
-        <Awards />
-        <Opinions />
-        <Contact />
-      </>
-    );
-}
+  return (
+    <>
+      <Navbar transparent={true} scrolling={true} />
+      <Landpage />
+      <Actual />
+      <Aboutus />
+      <Separator />
+      <Menu />
+      <Awards />
+      <Opinions />
+      <Contact />
+    </>
+  );
+};
 
 export default MainPage;

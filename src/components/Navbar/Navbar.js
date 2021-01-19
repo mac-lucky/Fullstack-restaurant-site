@@ -4,21 +4,18 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  MDBLink,
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBFormInline,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
-  MDBDropdownItem,
   MDBIcon,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
 import "./Navbar.css";
 import ikonka from "../../images/ikonkapiera.png";
 import { NavHashLink as NavLink } from "react-router-hash-link";
+import MediaQuery from "react-responsive";
 
 class Navbar extends Component {
   state = {
@@ -101,24 +98,58 @@ class Navbar extends Component {
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem className="padright">
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="user" />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBNavLink className="dropdown-item" to="/myorders">
-                    <span style={{ color: "black" }}>Moje zamówienia</span>
-                  </MDBNavLink>
-                  <MDBNavLink className="dropdown-item" to="/login">
-                    <span style={{ color: "black" }}>Zaloguj</span>
-                  </MDBNavLink>
-                  <MDBNavLink className="dropdown-item" to="/register">
-                    <span style={{ color: "black" }}>Zarejestruj</span>
-                  </MDBNavLink>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavItem>
+            <MediaQuery minDeviceWidth={575}>
+              <MDBNavItem className="padright">
+                <MDBDropdown>
+                  <MDBDropdownToggle nav caret>
+                    <MDBIcon icon="user" />
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBNavLink className="dropdown-item" to="/myorders">
+                      <span style={{ color: "black" }}>Moje zamówienia</span>
+                    </MDBNavLink>
+                    <MDBNavLink className="dropdown-item" to="/login">
+                      <span style={{ color: "black" }}>Zaloguj</span>
+                    </MDBNavLink>
+                    <MDBNavLink className="dropdown-item" to="/register">
+                      <span style={{ color: "black" }}>Zarejestruj</span>
+                    </MDBNavLink>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
+            </MediaQuery>
+            <MediaQuery maxDeviceWidth={575}>
+              <MDBNavItem>
+                <hr className="hr-light wow fadeInLeft" />
+              </MDBNavItem>
+              <MDBNavItem>
+                <NavLink
+                  to="/register"
+                  activeClassName="navbarActivated"
+                  className="nav-link"
+                >
+                  Zarejestruj
+                </NavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <NavLink
+                  to="/login"
+                  activeClassName="navbarActivated"
+                  className="nav-link"
+                >
+                  Zaloguj
+                </NavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <NavLink
+                  to="/myorders"
+                  activeClassName="navbarActivated"
+                  className="nav-link"
+                >
+                  Moje zamówienia
+                </NavLink>
+              </MDBNavItem>
+            </MediaQuery>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

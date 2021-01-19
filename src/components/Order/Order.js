@@ -19,31 +19,43 @@ const Order = () => {
             <OrderCard
               meal={"Pierogi Ruskie"}
               ingredients={"ser, ziemniaki"}
-              price={"25,00 zł"}
+              price={"13,00 zł"}
               quantity={"8 szt"}
             />
             <OrderCard
               meal={"Pierogi Ruskie"}
               ingredients={"ser, ziemniaki"}
-              price={"25,00 zł"}
+              price={"13,00 zł"}
               quantity={"8 szt"}
             />
             <OrderCard
               meal={"Pierogi Ruskie"}
               ingredients={"ser, ziemniaki"}
-              price={"25,00 zł"}
+              price={"13,00 zł"}
               quantity={"8 szt"}
             />
             <OrderCard
               meal={"Pierogi Ruskie"}
               ingredients={"ser, ziemniaki"}
-              price={"25,00 zł"}
+              price={"13,00 zł"}
               quantity={"8 szt"}
             />
             <OrderCard
               meal={"Pierogi Ruskie"}
               ingredients={"ser, ziemniaki"}
-              price={"25,00 zł"}
+              price={"13,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"13,00 zł"}
+              quantity={"8 szt"}
+            />
+            <OrderCard
+              meal={"Pierogi Ruskie"}
+              ingredients={"ser, ziemniaki"}
+              price={"13,00 zł"}
               quantity={"8 szt"}
             />
           </div>
