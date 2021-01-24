@@ -8,7 +8,6 @@ import Awards from "../components/Awards/Awards";
 import Actual from "../components/Actual/Actual";
 import Contact from "../components/Contact/Contact";
 import Navbar from "../components/Navbar/Navbar";
-import Login from "../components/Login/Login";
 
 
 const MainPage = (props) => {
