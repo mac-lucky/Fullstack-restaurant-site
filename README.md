@@ -8,11 +8,11 @@ Website made in React using MDBootstrap Components and custom CSS code. MERN sta
 
 Start with:
 
-'yarn' 
+'''yarn''' 
 
 or
 
-'npm install'
+'''npm install'''
 
 to install dependencies.
 
