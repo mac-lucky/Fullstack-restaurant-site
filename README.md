@@ -8,13 +8,13 @@ Website made in React using MDBootstrap Components and custom CSS code. MERN sta
 
 Start with:
 
-'''
+'''bash
 yarn
 ''' 
 
 or
 
-'''
+'''bash
 npm install
 '''
 
