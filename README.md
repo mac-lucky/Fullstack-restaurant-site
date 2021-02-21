@@ -1,10 +1,21 @@
-# Description
-Site made in React using MDBootstrap Components and custom CSS code. Use Google Firebase as database to store orders made by customers and store the data. Website will be released soon.
+# Restaurant site
+Website made in React using MDBootstrap Components and custom CSS code. MERN stack is used as backend to store customer data and orders. Website will be released soon.
 
 ![alt text](https://github.com/Mac-lucky/Fullstack-restaurant-site/blob/master/screen.png?raw=true)
 
 
 ## Prerequisite
+
+Start with:
+
+'yarn' 
+
+or
+
+'npm install'
+
+to install dependencies.
+
 
 In the project directory, you can run:
 
