@@ -3,7 +3,7 @@ Website made in React using MDBootstrap Components and custom CSS code. MERN sta
 
 ![alt text](https://github.com/Mac-lucky/Fullstack-restaurant-site/blob/master/screen.png?raw=true)
 
-<p align="center"><a href="https://tutajlepsze.pl">LIVE SITE</a</P>
+<p align="center"><a href="https://tutajlepsze.pl">LIVE SITE</a></p>
 
 
 ## Prerequisite
