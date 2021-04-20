@@ -10,6 +10,7 @@ const Separator = () => {
         <h1>Można nie jeść w ogóle, ale nie można jeść źle.</h1>
         <MDBIcon className="icon down" icon="quote-right" />
       </MDBContainer>
+      <div></div>
     </>
   );
 };
